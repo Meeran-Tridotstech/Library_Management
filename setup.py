@@ -1,6 +1,9 @@
-app_name = "library_management"
-app_title = "Library Management"
-app_publisher = "Meeran"
-app_description = "Manage books and lending"
-app_email = "your_email@example.com"
-app_license = "MIT"
+from setuptools import setup, find_packages
+
+setup(
+    name='library_management',
+    version='0.0.1',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[],
+)
