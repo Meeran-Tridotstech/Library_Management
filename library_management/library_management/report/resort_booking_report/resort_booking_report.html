@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #34495e;
+    }
+
+    table.table-bordered {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+
+    table.table-bordered th,
+    table.table-bordered td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    table.table-bordered th {
+      background-color: #f8f9fa;
+      font-weight: bold;
+      color: #212529;
+    }
+
+    table.table-bordered tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    td[data-fieldname="custom_paid"]::after {
+      content: "✔️ Paid";
+      color: green;
+      font-weight: bold;
+    }
+
+    td[data-fieldname="status"] {
+      font-weight: bold;
+      color: white;
+      padding: 4px;
+      border-radius: 4px;
+    }
+
+    td[data-fieldname="status"]:contains("Booking") {
+      background-color: #3498db;
+    }
+
+    td[data-fieldname="status"]:contains("Vacating") {
+      background-color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>{{ report.report_name }}</h2>
+
+  <p>Name: {{ filters.name }}</p>
+  <p>City: {{ filters.city }}</p>
+  <p>Mobile Number: {{ filters.mobile_number }}</p>
+  <p>Nation: {{ filters.nationality }}</p>
+  <p>Booking Type: {{ filters.city }}</p>
+  <p>Booking Status: {{ filters.city }}</p>
+  <p>Amount: {{ filters.city }}</p>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        {% for col in columns %}
+          <th>{{ col.label }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in data %}
+        <tr>
+          {% for col in columns %}
+            <td data-fieldname="{{ col.fieldname }}">{{ row[col.fieldname] }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</body>
+</html>

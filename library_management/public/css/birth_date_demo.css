@@ -1,0 +1,15 @@
+/* birth_date_demo.css */
+.birth-date-wrapper {
+  padding: 20px;
+  background-color: #f0f4ff;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.output-label {
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c3e50;
+}

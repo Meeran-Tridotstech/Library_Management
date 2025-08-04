@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "creation": "2025-07-31 12:38:02.421789",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-07-31 14:58:14.501502",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "birth-date-demo",
+ "owner": "Administrator",
+ "page_name": "birth-date-demo",
+ "restrict_to_domain": "birth-date",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Birth date"
+}

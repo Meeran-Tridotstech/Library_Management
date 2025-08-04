@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-30 20:55:28.563565",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rhez",
+  "id",
+  "first_name",
+  "last_name",
+  "full_name",
+  "column_break_anxy",
+  "age",
+  "deaprtments",
+  "location",
+  "salary",
+  "section_break_xljc",
+  "address",
+  "column_break_synx",
+  "map",
+  "section_break_jxrh",
+  "table_lash",
+  "custom_link_option"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rhez",
+   "fieldtype": "Section Break",
+   "label": "<b style=\"color:red;\">Employee Details</b>"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "<b style=\"color:blue;\">First Name</b>",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "<b style=\"color:blue;\">Last Name</b>"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "<b style=\"color:blue;\">Full Name</b>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deaprtments",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "<b style=\"color:blue;\">Departments</b>",
+   "options": "Developer\nTester\nDevOps",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Int",
+   "label": "<b style=\"color:blue;\">Salary</b>"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Int",
+   "label": "<b style=\"color:blue;\">ID</b>"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "<b style=\"color:blue;\">Age</b>"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "<b style=\"color:blue;\">Location</b>"
+  },
+  {
+   "fieldname": "section_break_jxrh",
+   "fieldtype": "Section Break",
+   "label": "<b style=\"color:red;\">Child</b>"
+  },
+  {
+   "fieldname": "table_lash",
+   "fieldtype": "Table",
+   "label": "<b style=\"color:blue;\">Child</b>",
+   "options": "Child Doc"
+  },
+  {
+   "fieldname": "column_break_anxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xljc",
+   "fieldtype": "Section Break",
+   "label": "<b style=\"color:red;\">Address</b>"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "label": "<b style=\"color:blue;\">Map</b>"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "<b style=\"color:blue;\">Address</b>"
+  },
+  {
+   "fieldname": "column_break_synx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_link_option",
+   "fieldtype": "Link",
+   "label": "<b style=\"color:blue;\">Custom Link Options</b>",
+   "options": "Emp Details To Emp"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 10:46:49.608764",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Emp Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
