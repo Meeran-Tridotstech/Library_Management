@@ -1,0 +1,6 @@
+app_name = "library_management"
+app_title = "Library Management"
+app_publisher = "Meeran"
+app_description = "Manage books and lending"
+app_email = "your_email@example.com"
+app_license = "MIT"
